@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WordGame</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li id="header">
+				<h2>Word Game</h2>
+				<div id="underscore"></div>
+				<div id="answerbox"><input type="text" maxlength="1" id="answertext"></div>
+				<p>Number of attempts: <span id="attempt"></span></p>
+				<div id="status"></div>
+			</li>
+			<li id= "tagline">Try to guess the word!</li>
+		</ul>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+	<script src="common-words.js"></script>
+</body>
+</html>
