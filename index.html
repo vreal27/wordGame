@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>WordGame</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 	<div id="container">
@@ -14,6 +15,18 @@
 				<div id="answerbox"><input type="text" maxlength="1" id="answertext"></div>
 				<p>Number of attempts: <span id="attempt"></span></p>
 				<div id="status"></div>
+				<div id="usedletters">Guesses:<span id="letterguess"></span></div>
+				<ul id="lifebar">
+					<li> Health:</li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+					<li><i class="fas fa-heart"></i></li>
+				</ul>
 			</li>
 			<li id= "tagline">Try to guess the word!</li>
 		</ul>

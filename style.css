@@ -53,9 +53,24 @@ li {
 
 #header {
 	margin: 0;
-	height: 215px;
+	height: 250px;
 	width: auto;
 	border: solid 1px black;
 	background: lightgreen;
 	display: block;
+}
+
+#lifebar {
+	display: flex;
+	margin: 0;
+	margin-top: 10px;
+	list-style: none;
+	overflow: hidden;
+	width: 250px;
+}
+
+#lifebar i {
+	margin-top: 0;
+	margin: 1px;
+	color: red;
 }
