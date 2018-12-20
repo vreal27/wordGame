@@ -23,10 +23,12 @@ $(document).ready(function(){
 		var used = []
 
 		$("#answertext").on("change", function(){
+				 attempt--
 				
 				var letter = $("#answertext").val()
-				
-				used.push(letter)
+
+				if(used.indexOf(letter) === -1){
+					used.push(letter)
 
 				document.querySelector("#letterguess").innerHTML = used
 
@@ -36,23 +38,23 @@ $(document).ready(function(){
 				console.log(playerAnswer)
 
 				var counter = document.querySelector("#attempt")
-				counter.innerHTML = attempt--
+				counter.innerHTML = attempt
 
-				if(attempt === 6){
+				if(attempt === 7){
 					$("#lifebar").css("width", "220")
-				} else if (attempt === 5){
+				} else if (attempt === 6){
 					$("#lifebar").css("width", "203")
-				} else if (attempt === 4){
+				} else if (attempt === 5){
 					$("#lifebar").css("width", "185")
-				} else if (attempt === 3){
+				} else if (attempt === 4){
 					$("#lifebar").css("width", "166")
-				} else if (attempt === 2){
+				} else if (attempt === 3){
 					$("#lifebar").css("width", "149")
-				} else if (attempt === 1){
+				} else if (attempt === 2){
 					$("#lifebar").css("width", "130")
-				} else if (attempt === 0){
+				} else if (attempt === 1){
 					$("#lifebar").css("width", "113")
-				} else if (attempt === -1){
+				} else if (attempt === 0){
 					$("#lifebar").css("width", "95")
 				} 
 		
@@ -70,13 +72,17 @@ $(document).ready(function(){
 
 					} 
 
-					if (attempt === -1) {
+					if (attempt === 0) {
 					document.querySelector("#status").innerHTML = "You lose!"
 					$('#answertext').prop("readonly", true)
 
 					}
 				
 				})
+
+			}
+				
+				
 			})
 
 })
